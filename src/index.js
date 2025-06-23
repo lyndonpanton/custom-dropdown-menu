@@ -11,8 +11,7 @@ function toggleDropdownOption(dropdownButton, e) {
 let dropdowns = document.getElementsByClassName("dropdown");
 
 for (let i = 0; i < dropdowns.length; i++) {
-    let dropdownButton = dropdowns[i].children[0];
-
+    let dropdownButton = dropdowns[i].children[0].children[0];
     dropdownButton.addEventListener("click", toggleDropdown);
 
     let dropdownContentItems =

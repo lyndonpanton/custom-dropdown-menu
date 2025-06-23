@@ -30,7 +30,14 @@ main {
     width: 400px;
 }
 
-.dropdown-button {
+.dropdown-display {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-display-button {
     display: block;
 
     margin-bottom: 8px;
@@ -44,6 +51,22 @@ main {
 
     font-size: 1.2rem;
     text-align: left;
+}
+
+.dropdown-display-icon {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+
+    font-size: 1.5rem;
+}
+
+.dropdown-display-icon-down::before {
+    content: "\02193";
+}
+
+.dropdown-display-icon-up::before {
+    content: "\02191";
 }
 
 .dropdown-content {
