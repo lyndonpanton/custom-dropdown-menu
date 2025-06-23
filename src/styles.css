@@ -24,13 +24,13 @@ main {
 
 }
 
-#dropdown {
+.dropdown {
     margin: 0 auto;
     
     width: 400px;
 }
 
-#dropdown-button {
+.dropdown-button {
     display: block;
 
     margin-bottom: 8px;
@@ -46,7 +46,7 @@ main {
     text-align: left;
 }
 
-#dropdown-content {
+.dropdown-content {
     border-radius: 4px;
     margin: 0;
     padding: 0;
