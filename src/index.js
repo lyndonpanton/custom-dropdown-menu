@@ -27,10 +27,16 @@ for (let i = 0; i < dropdowns.length; i++) {
     let dropdownDisplayButton = dropdownDisplay.children[0];
     
     let dropdownDisplayIcon = dropdownDisplay.children[1];
-    dropdownDisplay.addEventListener("click", toggleDropdown.bind(this, dropdownContent, dropdownDisplayIcon));
+    dropdownDisplay.addEventListener(
+        "click",
+        toggleDropdown.bind(this, dropdownContent, dropdownDisplayIcon)
+    );
 
     for (let j = 0; j < dropdownContentItems.length; j++) {
-        dropdownContentItems[j].addEventListener("click", toggleDropdownOption.bind(this, dropdownDisplayButton));
+        dropdownContentItems[j].addEventListener(
+            "click",
+            toggleDropdownOption.bind(this, dropdownDisplayButton)
+        );
     }
 
 }
