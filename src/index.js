@@ -16,6 +16,11 @@ function toggleDropdown(content, icon) {
 
 function toggleDropdownOption(dropdownButton, e) {
     dropdownButton.textContent = e.target.textContent;
+
+    let content = dropdownButton.parentElement.parentElement.children[1];
+    let icon = dropdownButton.parentElement.children[1];
+
+    toggleDropdown(content, icon);
 }
 
 let dropdowns = document.getElementsByClassName("dropdown");
